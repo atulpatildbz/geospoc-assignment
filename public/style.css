@@ -2,6 +2,16 @@
     margin:0;
     padding: 0;
 }
+
+button {
+    background-color: #555555;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    cursor: pointer;
+    padding: 12px 21px;
+}
+
 .Header {
     background-color: rgb(33, 156, 237);
     padding: 10px;
@@ -9,7 +19,7 @@
 }
 
 .map {
-    height: 400px;
+    height: 266px;
 }
 
 .map > div {
@@ -18,7 +28,6 @@
 }
 
 .mainFlexContainer {
-    margin: 5px;
     background-color: whitesmoke;
 }
 
@@ -35,3 +44,48 @@
     flex-basis: 100%;
     flex: 1;
 }
+
+table {
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid orange;
+    padding: 10px;
+    text-align: left;
+}
+
+.text {
+    font-family: sans-serif;
+}
+
+.largefont {
+    font-size: 25px;
+}
+
+.bluefont {
+    color: rgb(93, 164, 230)
+}
+
+.details-grid-wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    grid-auto-rows: minmax(20px, auto);
+}
+
+.centralizeDiv {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.details {
+    background-color: rgb(241, 248, 254);
+}
+
+.mainGridContainer {
+    display: grid;
+    grid-template-columns: [col] 50% [col] 50%;
+    grid-template-rows: [row] auto [row] auto;
+}
+

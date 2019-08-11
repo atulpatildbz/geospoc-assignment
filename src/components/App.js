@@ -3,33 +3,25 @@ import React, { Component } from 'react'
 import Header from './Header';
 import Demographics from './Demographics';
 import Map from './Map';
+import Details from './Details';
 
 
 class App extends Component {
     render() {
         return (
-            <div className="mainFlexContainer">
+            <>
                 <Header />
-                <div className="flexrow top-container">
-                    <div className="details box1 flexcolumn">
-                        details
+                <div className="mainGridContainer">
+                    <div className="details">
+                        <Details />
                     </div>
-                    <div className="map box2 flexcolumn">
+                    <div className="map">
                         <Map />
                     </div>
-                </div>
-                <Demographics />
-                {/* <h3 className="flexrow">Demographics</h3>
-                <div className="flexrow bottom-container">
-                    <div className="details box3 flexcolumn">
-                        Monthly Incode distribution
-                    </div>
-                    <div className="details box4 flexcolumn">
-                        Expenditure
-                    </div>
-                </div> */}
+                    <Demographics />
 
-            </div>
+                </div>
+            </>
         )
     }
 }

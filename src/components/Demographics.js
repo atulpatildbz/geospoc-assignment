@@ -1,19 +1,19 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Expenditure from './Expenditure';
+import MonthlyIncome from './MonthlyIncome';
 
 class Demographics extends Component {
     render() {
         return (
-            <div className="demographics">
-                <h2>Demographics</h2>
-                <div className="flexrow" >
-                    <div className="details box3 flexcolumn">
-                        Monthly Incode distribution
-                    </div>
-                    <div className="details box4 flexcolumn">
-                        Expenditure
-                    </div>
+            <>
+                <h2 className="text bluefont" style={{'grid-column': 'span 2'}}>Demographics</h2>
+                <div className="monthlyIncome">
+                    <MonthlyIncome />
                 </div>
-            </div>
+                <div className="expenditure">
+                    <Expenditure />
+                </div>
+            </>
         )
     }
 }
