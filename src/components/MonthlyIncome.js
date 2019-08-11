@@ -12,7 +12,9 @@ class MonthlyIncome extends Component {
             });
             if (found) {
                 let chartObj = {...found};
-                return (<Pie
+                return (
+                    <>
+                <Pie
                     data={{
                         labels: [chartObj.locality],
                         datasets: [
@@ -26,6 +28,10 @@ class MonthlyIncome extends Component {
                         maintainAspectRatio: false
                     }}
                 />
+                <div className="text bluefont">
+                    {chartObj.income}
+                </div>
+                </>
                 )
             }
         }
